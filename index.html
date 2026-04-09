@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to my Calculator App</h1>
+    <div class="calculator">
+      <div class="display"></div>
+
+      <input type="text" id="numInput" value="0" disabled />
+
+      <div class="actionBtns">
+        <button id="btnClear" onclick="clearDisplay()">C</button>
+        <button id="btnDel" onclick="deleteDisplay()">⌫</button>
+      </div>
+
+      <div class="mainBtns">
+        <button id="btnSeven" onclick="appendNumber('7')">7</button>
+        <button id="btnEight" onclick="appendNumber('8')">8</button>
+        <button id="btnNine" onclick="appendNumber('9')">9</button>
+        <button class="opBtn" id="btnDiv" onclick="appendOperation('/')">
+          ÷
+        </button>
+
+        <button id="btnFour" onclick="appendNumber('4')">4</button>
+        <button id="btnFive" onclick="appendNumber('5')">5</button>
+        <button id="btnSix" onclick="appendNumber('6')">6</button>
+        <button class="opBtn" id="btnTimes" onclick="appendOperation('*')">
+          x
+        </button>
+
+        <button id="btnOne" onclick="appendNumber('1')">1</button>
+        <button id="btnTwo" onclick="appendNumber('2')">2</button>
+        <button id="btnThree" onclick="appendNumber('3')">3</button>
+        <button class="opBtn" id="btnMinus" onclick="appendOperation('-')">
+          -
+        </button>
+
+        <button id="btnZero" onclick="appendNumber('0')">0</button>
+        <button id="btnDec" onclick="appendNumber('.')">.</button>
+        <button id="btnEq" onclick="calculate()">=</button>
+        <button class="opBtn" id="btnAdd" onclick="appendOperation('+')">
+          +
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

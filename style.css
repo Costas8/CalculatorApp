@@ -1,0 +1,115 @@
+body {
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  position: relative;
+  margin: 0 80px 0 50px;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  font-size: 24px;
+}
+
+.calculator {
+  position: relative;
+  width: 500px;         
+  height: 90vh;          
+  padding: 40px 40px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;              
+  box-sizing: border-box;
+}
+
+
+.display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: black;
+  z-index: -1;
+}
+
+
+#numInput {
+  width: 100%;
+  height: 15%;           
+  font-size: 8vh;          
+  color: white;
+  text-align: right;
+  background-color: transparent;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding-right: 20px;
+  user-select: none;
+  border-radius: 12px;
+}
+
+.actionBtns {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  z-index: 900;
+}
+
+.actionBtns button {
+  flex: 1;
+  max-width: 500px;
+  font-size: 3vh;         
+  height: 60px;              
+  width: 500px;
+  border-radius: 50px;
+  border: 1px solid black;
+  background-color: #ABB0B8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.actionBtns button:hover {
+  background-color: white;
+}
+
+.mainBtns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  width: 100%;
+  flex-grow: 1;           
+}
+
+.mainBtns button {
+  width: 100%;
+  height: 100%;             
+  background-color: #595959;
+  border-radius: 12px;
+  font-size: 5vh;      
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mainBtns button:hover {
+  background-color: darkgrey;
+  color: black;
+}
+
+.mainBtns .opBtn {
+  background-color: orange;
+}
+
+.mainBtns .opBtn:hover {
+  background-color: #ffb84d;
+  color: black;
+}
